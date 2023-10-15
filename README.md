@@ -22,3 +22,18 @@ To run a bot for a specific challenge, simply execute the corresponding Python s
 ```
 python typing_speed_bot.py
 ```
+
+`[x1 y1 x2 y2]` are the `top left` and `botom right` corners of the text area
+## to find `[x1 y1 x2 y2]`
+1- open a windows terninal 
+2- make sure u have all libraries for this project installed mainly `pyautogui`
+3- run python
+```
+> python3
+Python 3.11.6 (tags/v3.11.6:8b6ee5b, Oct  2 2023, 14:57:12) [MSC v.1935 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import pyautogui
+>>> pyautogui.displayMousePosition()
+Press Ctrl-C to quit.
+X:  662 Y: 1141 RGB: (133, 133, 133)
+```
