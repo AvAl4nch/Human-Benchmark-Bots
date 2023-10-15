@@ -1,3 +1,4 @@
+# work in peogress 
 import sys
 import pytesseract
 from PIL import Image
