@@ -40,3 +40,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 Press Ctrl-C to quit.
 X:  662 Y: 1141 RGB: (133, 133, 133)
 ```
+
+4- hover over the corners and type the x, y values
+
+5- to exit press `ctrl+c` then type `exit()`
