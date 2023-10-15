@@ -10,8 +10,15 @@ To run this project, you need to have Python 3.8 or higher installed on your sys
 
 You can install them using pip:
 ```
-pip install selenium opencv-python pyautogui numpy
+pip install pytesseract pillow keyboard pyautogui
 ```
 - [Tesseract-OCR](https://www.softpedia.com/get/Programming/Other-Programming-Files/Tesseract-OCR.shtml)
 
 intall and lunch th `.exe` installer
+
+# Usage
+To run a bot for a specific challenge, simply execute the corresponding Python script. For example, to run the bot for the typing speed challenge, run:
+
+```
+python typing_speed_bot.py
+```
