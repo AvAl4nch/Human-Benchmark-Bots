@@ -1,14 +1,12 @@
 import time
 import pytesseract
-from PIL import Image   # image handling
-import keyboard     # for keyboard input
-import pyautogui    # for screenshot taking
-
+from PIL import Image  # image handling
+import keyboard  # for keyboard input
+import pyautogui  # for screenshot taking
+import argparse
 
 
 def main():
-    
-
     args = parse_arguments()
 
     delay = args.delay
@@ -30,7 +28,6 @@ def main():
     image = Image.open(screenshot_path)
     text = pytesseract.image_to_string(image)
 
-
     lines = text.split('\n')
 
     for line in lines:
@@ -42,7 +39,8 @@ def parse_arguments():
     parser = argparse.ArgumentParser(description='Typing Speed Bot')
     parser.add_argument('--delay', type=float, default=4, help='Delay before starting')
     parser.add_argument('--region', nargs=4, type=int, help='Region coordinates x1 y1 x2 y2')
-    parser.add_argument('--path', type=string, default=r'C:\Program Files\Tesseract-OCR\tesseract.exe', help='path to tesseract.exe')
+    parser.add_argument('--path', type=str, default=r'C:\Program Files\Tesseract-OCR\tesseract.exe',
+                        help='path to tesseract.exe')
     return parser.parse_args()
 
 
