@@ -31,7 +31,7 @@ def main():
 
 
 def parse_arguments():
-    parser = argparse.ArgumentParser(description='Typing Speed Bot')
+    parser = argparse.ArgumentParser(description='Aim Trainer Bot')
     parser.add_argument('--delay', type=float, default=4, help='Delay before starting')
     parser.add_argument('--region', nargs=4, type=int, help='Region coordinates x1 y1 x2 y2')
     return parser.parse_args()
