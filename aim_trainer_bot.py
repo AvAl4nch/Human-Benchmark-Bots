@@ -2,25 +2,20 @@ import sys
 import time
 from PIL import Image   # image handling
 import pyautogui    # for screenshot taking
+import argparse
 
 
 def main():
-    x1, y1, x2, y2 = 800, 170, 1790 - 700, 680 - 150
 
+    args = parse_arguments()
 
-    if len(sys.argv) == 6:
-        delay = sys.argv[1]
-        x1 = int(sys.argv[2])
-        y1 = int(sys.argv[3])
-        x2 = int(sys.argv[4]) - int(sys.argv[2])
-        y2 = int(sys.argv[5]) - int(sys.argv[3])
-    elif len(sys.argv) == 2:
-        delay = sys.argv[1]
-    elif len(sys.argv) == 1:
-        delay = 4.0
+    delay = args.delay
+    region = args.region
+
+    if region:
+        x1, y1, x2, y2 = region
     else:
-        print('invalid number of arguments! \ncommand must be like:\npython typing_speed_bt.py [delay] [x1 y1 x2 y2]')
-        exit()
+        x1, y1, x2, y2 = 800, 170, 1790 - 700, 680 - 150
 
     time.sleep(float(delay))
 
@@ -36,6 +31,13 @@ def main():
         center = [pos.left + pos.width / 2, pos.top + pos.height / 2]
 
         pyautogui.click(center[0], center[1])
+
+
+def parse_arguments():
+    parser = argparse.ArgumentParser(description='Typing Speed Bot')
+    parser.add_argument('--delay', type=float, default=4, help='Delay before starting')
+    parser.add_argument('--region', nargs=4, type=int, help='Region coordinates x1 y1 x2 y2')
+    return parser.parse_args()
 
 
 if __name__ == '__main__':
