@@ -20,11 +20,14 @@ intall and lunch th `.exe` installer
 To run a bot for a specific challenge, simply execute the corresponding Python script. For example, to run the bot for the typing speed challenge, run:
 
 ```
-python typing_speed_bot.py
+python typing_speed_bot.py [delay] [x1 y1 x2 y2] [path to tesseract.exe] 
 ```
 
-`[x1 y1 x2 y2]` are the `top left` and `botom right` corners of the text area
+
 ## to find `[x1 y1 x2 y2]`
+
+`[x1 y1 x2 y2]` are the `top left` and `botom right` corners of the text area
+
 1- open a windows terninal
 
 2- make sure u have all libraries for this project installed mainly `pyautogui`
