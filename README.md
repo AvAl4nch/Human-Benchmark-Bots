@@ -26,6 +26,12 @@ then open the your web brouser on the chalenge
 after th delay period the programe will start 
 
 
+```
+ python .\main.py 3 800 380 1770 525 'C:\Program Files\Tesseract-OCR\tesseract.exe'
+```
+
+
+
 ## to find `[x1 y1 x2 y2]`
 
 `[x1 y1 x2 y2]` are the `top left` and `botom right` corners of the text area
