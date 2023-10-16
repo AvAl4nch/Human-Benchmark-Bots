@@ -34,7 +34,7 @@ after th delay period the programe will start
 
 ## Aim trainer
 
-you need to add a target.png which is a smaill pic of the target only in the same file as the programe
+you need to add a target.png which is a amall pic of the target only, in the same file as the programe
 
 # to find `[x1 y1 x2 y2]` and `RGB` values:
 
