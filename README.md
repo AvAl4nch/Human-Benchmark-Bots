@@ -23,6 +23,7 @@ To run a bot for a specific challenge, simply execute the corresponding Python s
 python typing_speed_bot.py [delay] [x1 y1 x2 y2] [path to tesseract.exe] 
 ```
 then open the your web brouser on the chalenge 
+after th delay period the programe will start 
 
 
 ## to find `[x1 y1 x2 y2]`
