@@ -36,7 +36,7 @@ after th delay period the programe will start
 
 you need to add a target.png which is a smaill pic of the target only in the same file as the programe
 
-# to find `[x1 y1 x2 y2] and `RGB` values:
+# to find `[x1 y1 x2 y2]` and `RGB` values:
 
 `[x1 y1 x2 y2]` are the `top left` and `botom right` corners of the text area
 
