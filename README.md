@@ -32,7 +32,9 @@ after th delay period the programe will start
  python .\typing_speed_bot.pyy --delay 5 --region 800 400 1790 560 --path 'C:\Program Files\Tesseract-OCR\tesseract.exe'
 ```
 
+## Aim trainer
 
+you need to add a target.png which is a smaill pic of the target only in the same file as the programe
 
 ## to find `[x1 y1 x2 y2]`
 
