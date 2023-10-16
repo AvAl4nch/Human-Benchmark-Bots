@@ -1,6 +1,4 @@
-import sys
 import time
-from PIL import Image   # image handling
 import pyautogui    # for screenshot taking
 import argparse
 
@@ -42,3 +40,4 @@ def parse_arguments():
 
 if __name__ == '__main__':
     main()
+    
