@@ -18,14 +18,11 @@ def main():
     time.sleep(float(delay))
 
     screenshot_path = r'tmp.png'
-    target_path = r'target2.png'
+    target_path = r'target.png'
 
     for _ in range(31):
-        my_screenshot = pyautogui.screenshot(region=(x1, y1, x2, y2))
-        my_screenshot.save(screenshot_path)
 
         pos = pyautogui.locateOnScreen(target_path, region=(x1, y1, x2, y2), confidence=0.5)
-
         center = [pos.left + pos.width / 2, pos.top + pos.height / 2]
 
         pyautogui.click(center[0], center[1])
