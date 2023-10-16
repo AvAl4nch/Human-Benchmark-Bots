@@ -28,7 +28,7 @@ def main():
 
 
 def parse_arguments():
-    parser = argparse.ArgumentParser(description='Typing Speed Bot')
+    parser = argparse.ArgumentParser(description='Reaction Time Bot')
     parser.add_argument('--delay', type=float, default=3, help='Delay before starting')
     parser.add_argument('--green', nargs=3, type=int, help='Green RGB values R G B')
     return parser.parse_args()
