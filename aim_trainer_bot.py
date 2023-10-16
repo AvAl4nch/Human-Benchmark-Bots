@@ -12,6 +12,8 @@ def main():
 
     if region:
         x1, y1, x2, y2 = region
+        x2 = x2 - x1
+        y2 = y2 - y1
     else:
         x1, y1, x2, y2 = 800, 170, 1790 - 700, 680 - 150
 
