@@ -1,4 +1,3 @@
-import sys
 import time
 import pytesseract
 from PIL import Image   # image handling
@@ -9,30 +8,17 @@ import pyautogui    # for screenshot taking
 
 def main():
     
-    path = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
-    x1, y1, x2, y2 = 800, 370, 1000, 160
 
-    if len(sys.argv) == 7:
-        delay = sys.argv[1]
-        x1 = int(sys.argv[2])
-        y1 = int(sys.argv[3])
-        x2 = int(sys.argv[4]) - int(sys.argv[2])
-        y2 = int(sys.argv[5]) - int(sys.argv[3])
-        path = sys.argv[6]
-    elif len(sys.argv) == 6:
-        delay = sys.argv[1]
-        x1 = int(sys.argv[2])
-        y1 = int(sys.argv[3])
-        x2 = int(sys.argv[4]) - int(sys.argv[2])
-        y2 = int(sys.argv[5]) - int(sys.argv[3])
-    elif len(sys.argv) == 2:
-        delay = sys.argv[1]
-    elif len(sys.argv) == 1:
-        delay = 4.0
+    args = parse_arguments()
+
+    delay = args.delay
+    region = args.region
+    path = args.path
+
+    if region:
+        x1, y1, x2, y2 = region
     else:
-        print('invalid number of arguments! \ncommand must be like:\npython typing_speed_bt.py [delay] [x1 y1 x2 y2] [path to tesseract.exe]')
-        exit()
-
+        x1, y1, x2, y2 = 800, 370, 1000, 160
 
     time.sleep(float(delay))
     pytesseract.pytesseract.tesseract_cmd = path
@@ -50,6 +36,14 @@ def main():
     for line in lines:
         keyboard.write(line)
         keyboard.press_and_release('space')
+
+
+def parse_arguments():
+    parser = argparse.ArgumentParser(description='Typing Speed Bot')
+    parser.add_argument('--delay', type=float, default=4, help='Delay before starting')
+    parser.add_argument('--region', nargs=4, type=int, help='Region coordinates x1 y1 x2 y2')
+    parser.add_argument('--path', type=string, default=r'C:\Program Files\Tesseract-OCR\tesseract.exe', help='path to tesseract.exe')
+    return parser.parse_args()
 
 
 if __name__ == "__main__":
