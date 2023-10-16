@@ -6,11 +6,12 @@ To run this project, you need to have Python 3.8 or higher installed on your sys
 - pillow
 - keyboard
 - pyautogui
+- OpenCV-python
 - [Tesseract-OCR](https://www.softpedia.com/get/Programming/Other-Programming-Files/Tesseract-OCR.shtml)
 
 You can install them using pip:
 ```
-pip install pytesseract pillow keyboard pyautogui
+pip install pytesseract pillow keyboard pyautogui  OpenCV-python
 ```
 - [Tesseract-OCR](https://www.softpedia.com/get/Programming/Other-Programming-Files/Tesseract-OCR.shtml)
 
