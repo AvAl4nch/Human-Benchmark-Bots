@@ -52,6 +52,5 @@ X:  662 Y: 1141 RGB: (133, 133, 133)
 
 
 # note
-the bot is not ready at all!
-and i have so manny ideas i want to add to make it better 
-and i wanna make a bot for every challeng in the website 
+this is just a thing i do as a hobby
+if you have any idea how to improve the code don't hesitate sharing it
