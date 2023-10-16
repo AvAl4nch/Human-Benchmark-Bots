@@ -19,17 +19,17 @@ pip install pytesseract pillow keyboard pyautogui  OpenCV-python argparse
 intall and lunch th `.exe` installer
 
 # Usage
-To run a bot for a specific challenge, simply execute the corresponding Python script. For example, to run the bot for the typing speed challenge, run:
+To run a bot for a specific challenge, simply execute the corresponding Python script with -h for arguments:
 
 ```
-python typing_speed_bot.py [delay] [x1 y1 x2 y2] [path to tesseract.exe] 
+python typing_speed_bot.py -h
 ```
-then open the your web brouser on the chalenge 
+then open  your web brouser on the chalenge 
 after th delay period the programe will start 
 
 
 ```
- python .\typing_speed_bot.py 3 800 380 1770 525 'C:\Program Files\Tesseract-OCR\tesseract.exe'
+ python .\typing_speed_bot.py --delay 3 --region 800 380 1770 525 --path 'C:\Program Files\Tesseract-OCR\tesseract.exe'
 ```
 
 
