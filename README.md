@@ -27,7 +27,7 @@ after th delay period the programe will start
 
 
 ```
- python .\main.py 3 800 380 1770 525 'C:\Program Files\Tesseract-OCR\tesseract.exe'
+ python .\typing_speed_bot.py 3 800 380 1770 525 'C:\Program Files\Tesseract-OCR\tesseract.exe'
 ```
 
 
