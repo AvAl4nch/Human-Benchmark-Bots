@@ -44,3 +44,9 @@ X:  662 Y: 1141 RGB: (133, 133, 133)
 4- hover over the corners and type the x, y values
 
 5- to exit press `ctrl+c` then type `exit()`
+
+
+# note
+the bot is not ready at all!
+and i have so manny ideas i want to add to make it better 
+and i wanna make a bot for every challeng in the website 
