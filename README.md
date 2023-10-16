@@ -29,7 +29,7 @@ after th delay period the programe will start
 
 
 ```
- python .\typing_speed_bot.py --delay 3 --region 800 380 1770 525 --path 'C:\Program Files\Tesseract-OCR\tesseract.exe'
+ python .\typing_speed_bot.pyy --delay 5 --region 800 400 1790 560 --path 'C:\Program Files\Tesseract-OCR\tesseract.exe'
 ```
 
 
