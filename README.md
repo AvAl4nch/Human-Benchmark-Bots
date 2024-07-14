@@ -1,4 +1,6 @@
 # Human Benchmark Bots in Python
+![Untitled design (1)](https://github.com/user-attachments/assets/731f03ec-4a4a-4c1a-ba27-4c9f611288a4)
+
 This project contains a collection of Python bots that can perform various tasks on the [Human Benchmark](https://humanbenchmark.com) website, such as reaction time, verbal memory, aim trainer, and more. I built this project to challenge myself and learn more about web automation and computer vision. The goal of these bots is to achieve the highest possible scores on each challenge and demonstrate the capabilities of artificial intelligence.
 # Installation
 To run this project, you need to have Python 3.8 or higher installed on your system. You also need to install the following libraries:
